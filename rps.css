@@ -1,0 +1,92 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a605, #23d5ab);
+    
+    background-size: 400% 400%;
+    color: white;
+    animation: change 10s ease-in-out infinite;
+    margin: 3em;
+    position: relative;
+  }
+  @keyframes change {
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0 50%;
+    }
+  }
+  strong {
+    text-decoration: underline;
+  }
+  span:before{
+    content: '';
+    animation: animate infinite  8s;
+}
+@keyframes animate{
+    0%{
+        content: 'Rock';
+    }
+    20%{
+        content: 'Paper';
+    }
+    40%{
+        content: 'Scissors';
+    }
+    60%{
+        content: 'Rock';
+    }
+    80%{
+        content: 'Paper';
+    }
+    100%{
+        content: 'Scissors';
+    }
+}
+  
+  button {
+    background: rgb(112, 172, 112);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  button:active {
+    background: green;
+  }
+  
+  .scoreboard {
+    width: 14em;
+    margin: auto;
+    border: 1px solid white;
+  }
+  .scoreboard h2 {
+    border-bottom: 1px solid white;
+    margin: 0;
+    padding: 10px;
+  }
+  .scoreboard table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .scoreboard th, .scoreboard td {
+    text-align: center;
+  }
+  .scoreboard td {
+    font-size: 3em;
+    padding: 0 20px;
+  }
+  
+  #status {
+    margin-top: 20px;
+  }
